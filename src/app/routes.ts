@@ -1,0 +1,24 @@
+import { createBrowserRouter } from "react-router";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: Home,
+  },
+  {
+    path: "/products",
+    Component: Products,
+  },
+  {
+    path: "/admin",
+    Component: AdminLogin,
+  },
+  {
+    path: "/admin/dashboard",
+    Component: AdminDashboard,
+  },
+]);
